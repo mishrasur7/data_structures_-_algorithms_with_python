@@ -44,4 +44,34 @@ class ClassSchedule:
 sched = ClassSchedule('Chemistry')
 del sched
 
+
+
+class Animal:
+    def __init__(self) -> None:
+        pass
+    
+    def can_walk(self):
+        print('Only fish cannot walk but others can!')
+    
+    def can_fly(self):
+        print('Most birds can fly')
+
+class Robot:
+    def __init__(self) -> None:
+        pass
+    
+    def can_walk(self):
+        print('Robots can walk if they are fitted with legs!')
+    
+    def can_fly(self):
+        print('Robots can fly if they have flying engine integrated.')
+
+type1 = Animal()
+type2 = Robot()
+
+for type in (type1, type2):
+    type.can_walk()
+    type.can_fly()
+    print('______________')
+
 '''
